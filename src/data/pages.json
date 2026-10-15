@@ -1,43 +1,69 @@
 [
   {
-    "slug": "top-robot-hut-bui-thong-minh",
-    "title": "Đánh Giá Top Robot Hút Bụi Thông Minh Tốt Nhất 2026",
-    "headline": "Sạch Triệt Để - Rảnh Tay Tuyệt Đối Với Robot Hút Bụi Thế Hệ Mới",
-    "description": "Khám phá các dòng robot hút bụi lau nhà thông minh lực hút siêu mạnh, điều hướng AI tránh vật cản chính xác, giá tốt nhất hôm nay.",
+    "slug": "5-dieu-gia-nhu-toi-biet-truoc-khi-mua-dreame-l20-ultra",
+    "productName": "Robot Hút Bụi Lau Nhà Dreame L20 Ultra",
+    "title": "5 Điều Giá Như Tôi Biết Trước Khi Mua Dreame L20 Ultra (Review Chân Thật)",
+    "headline": "5 Điều \"Giá Như Tôi Biết\" Trước Khi Chi 20 Triệu Mua Robot Hút Bụi Dreame L20 Ultra",
+    "subHeadline": "Đừng vội xuống tiền trước khi đọc kỹ bài viết này nếu bạn không muốn tốn tiền vô ích hoặc thất vọng sau 1 tuần sử dụng!",
     "productImage": "https://images.unsplash.com/photo-1584824486509-112e4181ff6b?auto=format&fit=crop&w=800&q=80",
-    "price": "4.500.000đ",
-    "originalPrice": "6.900.000đ",
-    "discount": "Giảm 35%",
-    "couponCode": "ROBOT35OFF",
-    "features": [
-      "Lực hút cực mạnh lên đến 5000Pa",
-      "Tự động giặt giẻ và sấy khô bằng khí nóng",
-      "Điều hướng LDS laser kết hợp AI tránh vật cản thông minh",
-      "Bảo hành chính hãng 12 tháng, đổi trả trong 30 ngày"
+    "price": "18.990.000đ",
+    "originalPrice": "24.990.000đ",
+    "discount": "Tiết kiệm 24%",
+    "couponCode": "DREAME3M",
+    "affiliateUrl": "https://shopee.vn/link-affiliate-cua-ban",
+    "ctaText": "XEM GIÁ ƯU ĐÃI CHÍNH HÃNG HÔM NAY",
+    "themeColor": "#2563eb",
+    "introText": "Tôi đã đắn đo suốt 3 tháng trời trước khi quyết định quẹt thẻ mua con robot hút bụi này. Sau 6 tháng trải nghiệm thực tế trong căn hộ 80m², đây là 5 điều tôi ước có ai đó nói cho mình biết sớm hơn...",
+    "lessons": [
+      {
+        "id": 1,
+        "title": "Nó KHÔNG THỂ thay thế hoàn toàn việc dọn dẹp truyền thống 100%",
+        "type": "warning",
+        "content": "Nhiều quảng cáo làm bạn tưởng có robot là nhà tự sạch tinh tươm. Sự thật là các góc tường hẹp 90 độ hay các khoảng khe hẹp dưới 10cm robot vẫn chịu chết. Mỗi tuần bạn vẫn cần 10 phút dùng chổi gom lại những góc kẹt đó. Tuy nhiên, nó giải quyết được 90% công việc hàng ngày!"
+      },
+      {
+        "id": 2,
+        "title": "Cần phải dọn dẹp dây điện và đồ chơi trên sàn trước khi cho robot chạy",
+        "type": "warning",
+        "content": "Dù được trang bị camera AI tránh vật cản đỉnh cao, nhưng với các loại dây sạc điện thoại nhỏ hay tất (vớ) tất mỏng nằm lăn lốc, robot vẫn có xác định nuốt phải và kẹt. Bài học rút ra: Tập thói quen gom đồ chơi và dây điện gọn lên bàn trước khi bấm nút dọn nhà."
+      },
+      {
+        "id": 3,
+        "title": "Khả năng xòe giẻ lau sát mép tường hoạt động thực sự ấn tượng",
+        "type": "highlight",
+        "content": "Đây chính là tính năng đáng tiền nhất! Khác với các dòng robot cũ lau bỏ sót chân tường 3-5cm, L20 Ultra có cơ chế tự thò chân giẻ lau ra sát chân tường. Mép gạch luôn sạch bóng mà không cần bạn phải lau tay lại."
+      },
+      {
+        "id": 4,
+        "title": "Trạm sạc tự động rảnh tay đến mức làm bạn... lười đi hẳn",
+        "type": "highlight",
+        "content": "Tính năng tự giặt giẻ, tự sấy khô bằng khí nóng và tự hút rác vào túi chứa 3.2L giúp tôi 1 tháng mới phải đổ rác 1 lần. Mùi hôi giẻ ẩm mốc hoàn toàn biến mất. Nếu biết tiện thế này tôi đã mua từ 2 năm trước!"
+      },
+      {
+        "id": 5,
+        "title": "Cần tính toán trước vị trí đặt trạm sạc (Cần khá nhiều diện tích)",
+        "type": "info",
+        "content": "Trạm sạc tự động của robot này rất to (cao gần 60cm, rộng 45cm). Bạn cần chuẩn bị sẵn một góc trống gần ổ điện và ổ cắm nước (nếu dùng bộ cấp xả tự động). Đừng để mua về mới luống cuống không biết đặt ở đâu."
+      }
     ],
-    "affiliateUrl": "https://shopee.vn/link-tiep-thi-cua-ban",
-    "ctaText": "NHẬN ƯU ĐÃI & MUA NGAY",
-    "themeColor": "#2563eb"
-  },
-  {
-    "slug": "top-robot-tong-hop",
-    "title": "Đánh Giá Top Robot Hút Bụi Thông Minh Tốt Nhất 2026",
-    "headline": "Rảnh Tay Tuyệt Đối Với Robot Hút Bụi - Thế Hệ Mới Sạch Triệt Để ",
-    "description": "Khám phá các dòng robot hút bụi lau nhà thông minh lực hút siêu mạnh, điều hướng AI tránh vật cản chính xác, giá tốt nhất hôm nay.",
-    "productImage": "https://images.unsplash.com/photo-1584824486509-112e4181ff6b?auto=format&fit=crop&w=800&q=80",
-    "price": "4.500.000đ",
-    "originalPrice": "6.900.000đ",
-    "discount": "Giảm 35%",
-    "couponCode": "ROBOT35OFF",
-    "features": [
-      "Lực hút cực mạnh lên đến 5000Pa",
-      "Tự động giặt giẻ và sấy khô bằng khí nóng",
-      "Điều hướng LDS laser kết hợp AI tránh vật cản thông minh",
-      "Bảo hành chính hãng 12 tháng, đổi trả trong 30 ngày"
+    "whoShouldBuy": [
+      "Gia đình bận rộn, đi làm cả ngày không có thời gian dọn nhà.",
+      "Nhà có nuôi thú cưng (chó, mèo) hay bị rụng lông.",
+      "Nhà có trẻ nhỏ hay bò chơi dưới sàn nhà."
     ],
-    "affiliateUrl": "https://shopee.vn/link-tiep-thi-cua-ban",
-    "ctaText": "NHẬN ƯU ĐÃI & MUA NGAY",
-    "themeColor": "#2563eb"
+    "whoShouldNotBuy": [
+      "Nhà quá nhiều tầng mà không muốn bê trạm sạc đi lại.",
+      "Nhà sàn nhiều thảm lông quá dày và nhiều đồ đạc ngổn ngang."
+    ],
+    "faqs": [
+      {
+        "q": "Mua ở đâu để đảm bảo hàng chính hãng và bảo hành?",
+        "a": "Bạn nên chọn mua tại Gian hàng chính hãng (Mall) trên Shopee/Lazada hoặc các đại lý ủy quyền lớn để nhận bảo hành 24 tháng chính hãng."
+      },
+      {
+        "q": "Túi đựng rác và nước lau sàn chuyên dụng dùng được bao lâu?",
+        "a": "Túi rác dùng được 60-75 ngày. Nước lau sàn đi kèm dùng được khoảng 2-3 tháng tùy tần suất dọn dẹp."
+      }
+    ]
   }
-  
 ]

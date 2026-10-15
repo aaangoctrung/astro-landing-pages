@@ -18,213 +18,206 @@ const { page } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{page.title}</title>
     <style define:vars={{ themeColor: page.themeColor }}>
-      * {
-        box-sizing: border-box;
-      }
+      * { box-sizing: border-box; }
       body {
-        font-family: system-ui, -apple-system, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f3f4f6;
-        color: #1f2937;
-        line-height: 1.6;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        margin: 0; padding: 0;
+        background-color: #f8fafc;
+        color: #334155;
+        line-height: 1.7;
       }
-      .navbar {
-        background: #ffffff;
-        padding: 16px 20px;
-        text-align: center;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-        font-weight: 600;
-        font-size: 0.95rem;
-        color: #4b5563;
+      .top-bar {
+        background: #1e293b; color: #f8fafc;
+        text-align: center; padding: 10px 15px;
+        font-size: 0.875rem; font-weight: 500;
       }
       .container {
-        max-width: 800px;
-        margin: 30px auto;
-        padding: 0 20px;
+        max-width: 760px; margin: 0 auto; padding: 20px 16px;
       }
-      .card {
-        background: #ffffff;
-        border-radius: 16px;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-        overflow: hidden;
-        display: grid;
-        grid-template-columns: 1fr;
-      }
-      @media (min-width: 768px) {
-        .card {
-          grid-template-columns: 1fr 1fr;
-        }
-      }
-      .product-image-container {
-        background: #f8fafc;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-      }
-      .product-image {
-        width: 100%;
-        max-height: 350px;
-        object-fit: cover;
-        border-radius: 8px;
-      }
-      .content-section {
-        padding: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-      .badge {
-        display: inline-block;
-        background-color: #fee2e2;
-        color: #dc2626;
-        font-size: 0.75rem;
-        font-weight: 700;
-        padding: 4px 10px;
-        border-radius: 20px;
-        margin-bottom: 12px;
-        text-transform: uppercase;
+      .article-card {
+        background: #ffffff; border-radius: 16px;
+        padding: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);
       }
       h1 {
-        color: #111827;
-        font-size: 1.5rem;
-        margin-top: 0;
-        margin-bottom: 12px;
-        line-height: 1.3;
+        font-size: 1.65rem; color: #0f172a; line-height: 1.35;
+        margin-top: 0; margin-bottom: 12px;
       }
-      .description {
-        font-size: 1rem;
-        color: #4b5563;
-        margin-bottom: 20px;
+      .author-meta {
+        display: flex; align-items: center; gap: 10px;
+        font-size: 0.875rem; color: #64748b; margin-bottom: 20px;
+        border-bottom: 1px solid #f1f5f9; padding-bottom: 12px;
       }
-      .price-box {
-        display: flex;
-        align-items: baseline;
-        gap: 12px;
-        margin-bottom: 20px;
+      .sub-headline {
+        font-size: 1.05rem; font-weight: 600; color: #dc2626;
+        background: #fef2f2; padding: 12px 16px; border-radius: 8px;
+        border-left: 4px solid #dc2626; margin-bottom: 20px;
       }
-      .current-price {
-        font-size: 1.75rem;
-        font-weight: 800;
-        color: var(--themeColor);
+      .product-hero {
+        text-align: center; margin: 24px 0; background: #f1f5f9;
+        padding: 16px; border-radius: 12px;
       }
-      .original-price {
-        font-size: 1.1rem;
-        color: #9ca3af;
-        text-decoration: line-through;
+      .product-hero img {
+        max-width: 100%; height: auto; max-height: 320px;
+        border-radius: 8px; object-fit: cover;
       }
-      .features-list {
-        list-style: none;
-        padding: 0;
-        margin: 0 0 24px 0;
-      }
-      .features-list li {
-        position: relative;
-        padding-left: 24px;
-        margin-bottom: 8px;
-        font-size: 0.95rem;
-        color: #374151;
-      }
-      .features-list li::before {
-        content: "✓";
-        position: absolute;
-        left: 0;
-        color: #10b981;
-        font-weight: bold;
-      }
-      .coupon-box {
-        background: #eff6ff;
-        border: 2px dashed #3b82f6;
-        padding: 12px;
-        border-radius: 8px;
+      .soft-cta-box {
+        background: #eff6ff; border: 1px dashed #3b82f6;
+        padding: 16px; border-radius: 10px; margin: 24px 0;
         text-align: center;
-        margin-bottom: 24px;
       }
-      .coupon-code {
-        font-weight: bold;
-        color: #1d4ed8;
-        font-size: 1.1rem;
+      .lesson-item {
+        margin: 24px 0; padding: 18px; border-radius: 12px;
+        background: #ffffff; border: 1px solid #e2e8f0;
+      }
+      .lesson-item.warning { border-left: 5px solid #f59e0b; background: #fffbeb; }
+      .lesson-item.highlight { border-left: 5px solid #10b981; background: #ecfdf5; }
+      .lesson-item.info { border-left: 5px solid #3b82f6; background: #eff6ff; }
+
+      .lesson-title {
+        font-size: 1.15rem; font-weight: 700; color: #0f172a;
+        margin-bottom: 8px; display: flex; align-items: center; gap: 8px;
+      }
+      .verdict-box {
+        display: grid; grid-template-columns: 1fr; gap: 16px;
+        margin: 30px 0;
+      }
+      @media (min-width: 640px) {
+        .verdict-box { grid-template-columns: 1fr 1fr; }
+      }
+      .verdict-card {
+        padding: 16px; border-radius: 10px; font-size: 0.95rem;
+      }
+      .verdict-card.yes { background: #f0fdf4; border: 1px solid #bbf7d0; }
+      .verdict-card.no { background: #fef2f2; border: 1px solid #fecaca; }
+
+      .price-section {
+        background: #0f172a; color: #ffffff; padding: 24px;
+        border-radius: 14px; text-align: center; margin: 30px 0;
+      }
+      .price-display {
+        font-size: 2rem; font-weight: 800; color: #facc15; margin: 8px 0;
+      }
+      .coupon-badge {
+        display: inline-block; background: #dc2626; color: white;
+        padding: 4px 12px; border-radius: 20px; font-weight: bold;
+        font-size: 0.85rem; margin-bottom: 12px;
       }
       .cta-btn {
-        display: block;
-        width: 100%;
-        background-color: var(--themeColor);
-        color: #ffffff;
-        text-align: center;
-        padding: 14px 20px;
-        border-radius: 8px;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 1.1rem;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        transition: transform 0.1s, opacity 0.2s;
+        display: block; width: 100%; background: #2563eb; color: #ffffff;
+        text-align: center; padding: 16px 20px; border-radius: 10px;
+        text-decoration: none; font-weight: 800; font-size: 1.15rem;
+        box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+        transition: transform 0.1s, background-color 0.2s;
       }
-      .cta-btn:hover {
-        opacity: 0.95;
-        transform: translateY(-1px);
-      }
-      .footer {
-        text-align: center;
-        margin-top: 30px;
-        font-size: 0.875rem;
-      }
-      .footer a {
-        color: #4b5563;
-        text-decoration: underline;
-      }
+      .cta-btn:hover { background: #1d4ed8; transform: translateY(-2px); }
+      .faq-section { margin-top: 30px; border-top: 1px solid #e2e8f0; padding-top: 20px; }
+      .faq-item { margin-bottom: 16px; }
+      .faq-q { font-weight: 700; color: #0f172a; }
+      .faq-a { font-size: 0.95rem; color: #475569; }
+      .footer-link { text-align: center; margin-top: 24px; }
+      .footer-link a { color: #64748b; text-decoration: underline; font-size: 0.9rem; }
     </style>
   </head>
   <body>
-    <div class="navbar">
-      🔥 Chương Trình Khuyến Mãi & Giới Thiệu Sản Phẩm Chính Hãng
+
+    <div class="top-bar">
+      💡 Lời khuyên tiêu dùng thông minh • Bài viết trải nghiệm thực tế
     </div>
 
     <div class="container">
-      <div class="card">
-        <!-- Cột hình ảnh sản phẩm -->
-        <div class="product-image-container">
-          <img src={page.productImage} alt={page.title} class="product-image" />
+      <div class="article-card">
+        
+        <!-- Tiêu đề & Thông tin bài viết -->
+        <h1>{page.headline}</h1>
+        <div class="author-meta">
+          <span>✍️ Bởi: <strong>Gia Đình Review</strong></span> • 
+          <span>⏱️ 5 phút đọc</span> • 
+          <span>📅 Cập nhật 2026</span>
         </div>
 
-        <!-- Cột thông tin và nút affiliate -->
-        <div class="content-section">
-          <div>
-            <span class="badge">{page.discount}</span>
-            <h1>{page.headline}</h1>
-            <p class="description">{page.description}</p>
-            
-            <div class="price-box">
-              <span class="current-price">{page.price}</span>
-              <span class="original-price">{page.originalPrice}</span>
+        <div class="sub-headline">
+          {page.subHeadline}
+        </div>
+
+        <p>{page.introText}</p>
+
+        <!-- Hình ảnh sản phẩm -->
+        <div class="product-hero">
+          <img src={page.productImage} alt={page.productName} />
+          <p style="font-size: 0.85rem; color: #64748b; margin-top: 8px;">Hình ảnh thực tế trọn bộ {page.productName}</p>
+        </div>
+
+        <!-- Soft CTA: Dẫn link sớm cho người vội -->
+        <div class="soft-cta-box">
+          <p style="margin:0 0 10px 0; font-weight: 600;">Bạn đang vội và muốn xem ngay chương trình giảm giá?</p>
+          <a href={page.affiliateUrl} target="_blank" rel="nofollow noopener" style="color: #2563eb; font-weight: bold; text-decoration: underline;">
+            👉 Bấm vào đây để xem giá ưu đãi {page.discount} tại Gian hàng chính hãng
+          </a>
+        </div>
+
+        <!-- Nội dung 5 sự thật / bài học -->
+        <h2 style="font-size: 1.3rem; color: #0f172a; margin-top: 32px;">Chi tiết 5 điều bạn nhất định phải biết:</h2>
+
+        {page.lessons.map((lesson) => (
+          <div class={`lesson-item ${lesson.type}`}>
+            <div class="lesson-title">
+              <span>#{lesson.id}.</span> {lesson.title}
             </div>
-
-            <ul class="features-list">
-              {page.features.map((feature) => (
-                <li>{feature}</li>
-              ))}
-            </ul>
-
-            {page.couponCode && (
-              <div class="coupon-box">
-                <span style="font-size: 0.85rem; color: #1e40af; display: block;">Mã giảm giá độc quyền:</span>
-                <span class="coupon-code">{page.couponCode}</span>
-              </div>
-            )}
+            <p style="margin: 0; font-size: 0.98rem; color: #334155;">{lesson.content}</p>
           </div>
+        ))}
 
-          <div>
-            <!-- Nút bấm trỏ thẳng đến link tiếp thị liên kết của bạn -->
-            <a href={page.affiliateUrl} target="_blank" rel="nofollow noopener" class="cta-btn">
-              {page.ctaText}
-            </a>
+        <!-- Bảng đánh giá: Ai nên mua / Ai không nên mua -->
+        <h2 style="font-size: 1.3rem; color: #0f172a; margin-top: 36px;">Tóm lại: Bạn có nên mua chiếc robot này?</h2>
+        <div class="verdict-box">
+          <div class="verdict-card yes">
+            <h4 style="margin:0 0 10px 0; color: #166534;">✅ BẠN NÊN MUA NẾU:</h4>
+            <ul style="padding-left: 18px; margin: 0;">
+              {page.whoShouldBuy.map((item) => <li>{item}</li>)}
+            </ul>
+          </div>
+          <div class="verdict-card no">
+            <h4 style="margin:0 0 10px 0; color: #991b1b;">❌ CÂN NHẮC LẠI NẾU:</h4>
+            <ul style="padding-left: 18px; margin: 0;">
+              {page.whoShouldNotBuy.map((item) => <li>{item}</li>)}
+            </ul>
           </div>
         </div>
-      </div>
 
-      <div class="footer">
-        <p><a href="/">← Quay lại Trang Chủ Danh Sách</a></p>
+        <!-- Khung giá & Nút CTA chính (Primary CTA Zone) -->
+        <div class="price-section">
+          {page.couponCode && (
+            <span class="coupon-badge">MÃ GIẢM GIÁ: {page.couponCode}</span>
+          )}
+          <div style="font-size: 0.9rem; color: #94a3b8;">Mức giá ưu đãi áp dụng hôm nay:</div>
+          <div class="price-display">
+            {page.price} <span style="font-size: 1.1rem; color: #94a3b8; text-decoration: line-through;">{page.originalPrice}</span>
+          </div>
+          <p style="font-size: 0.85rem; color: #cbd5e1; margin-bottom: 20px;">
+            *Bảo hành chính hãng 24 tháng, hỗ trợ đổi trả 1-1 trong 30 ngày nếu có lỗi sản xuất.
+          </p>
+          <a href={page.affiliateUrl} target="_blank" rel="nofollow noopener" class="cta-btn">
+            {page.ctaText} →
+          </a>
+        </div>
+
+        <!-- Hỏi đáp nhanh (FAQ) -->
+        <div class="faq-section">
+          <h3 style="font-size: 1.15rem; color: #0f172a;">Câu Hỏi Thường Gặp</h3>
+          {page.faqs.map((faq) => (
+            <div class="faq-item">
+              <div class="faq-q">Q: {faq.q}</div>
+              <div class="faq-a">A: {faq.a}</div>
+            </div>
+          ))}
+        </div>
+
+        <div class="footer-link">
+          <a href="/">← Quay lại Danh Sách Bài Viết Review</a>
+        </div>
+
       </div>
     </div>
+
   </body>
 </html>
