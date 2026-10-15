@@ -1,0 +1,48 @@
+---
+import pagesData from '../data/pages.json';
+---
+
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Danh Sách 10 Landing Page Test</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 0 20px;
+        background: #f3f4f6;
+      }
+      h1 { text-align: center; }
+      ul { list-style: none; padding: 0; }
+      li {
+        background: white;
+        margin: 10px 0;
+        padding: 15px 20px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      }
+      a {
+        text-decoration: none;
+        color: #2563eb;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🚀 Danh Sách 10 Landing Page (Demo SSG)</h1>
+    <ul>
+      {pagesData.map((page) => (
+        <li>
+          <span><strong>{page.slug}:</strong> {page.title}</span>
+          <a href={`/${page.slug}`}>Xem trang →</a>
+        </li>
+      ))}
+    </ul>
+  </body>
+</html>

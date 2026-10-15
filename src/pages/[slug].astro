@@ -1,0 +1,87 @@
+---
+import pagesData from '../data/pages.json';
+
+// Cấu hình Astro tự động sinh 10 trang tĩnh lúc build (getStaticPaths)
+export async function getStaticPaths() {
+  return pagesData.map((page) => ({
+    params: { slug: page.slug },
+    props: { page },
+  }));
+}
+
+const { page } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{page.title}</title>
+    <style define:vars={{ themeColor: page.themeColor }}>
+      body {
+        font-family: system-ui, -apple-system, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9fafb;
+        color: #111827;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+      .container {
+        max-width: 600px;
+        padding: 40px 20px;
+        background: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        text-align: center;
+      }
+      h1 {
+        color: var(--themeColor);
+        font-size: 2rem;
+        margin-bottom: 12px;
+      }
+      p {
+        font-size: 1.125rem;
+        color: #4b5563;
+        line-height: 1.6;
+        margin-bottom: 24px;
+      }
+      .cta-btn {
+        display: inline-block;
+        background-color: var(--themeColor);
+        color: #ffffff;
+        padding: 12px 28px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: opacity 0.2s;
+      }
+      .cta-btn:hover {
+        opacity: 0.9;
+      }
+      .footer {
+        margin-top: 20px;
+        font-size: 0.875rem;
+      }
+      .footer a {
+        color: #6b7280;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>{page.headline}</h1>
+      <p>{page.description}</p>
+      <a href="#" class="cta-btn">{page.ctaText}</a>
+    </div>
+    
+    <div class="footer">
+      <p><a href="/">← Quay lại Trang Chủ Danh Sách</a></p>
+    </div>
+  </body>
+</html>
