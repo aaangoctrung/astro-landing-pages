@@ -1,82 +1,43 @@
 [
   {
-    "slug": "page-1",
-    "title": "Giải Pháp Marketing Đột Phá 2026",
-    "headline": "Tối Ưu Hóa Tỷ Lệ Chuyển Đổi Cho Doanh Nghiệp",
-    "description": "Nền tảng tự động hóa giúp bạn tiếp cận hàng triệu khách hàng tiềm năng chỉ với vài cú nhấp chuột.",
-    "ctaText": "Dùng Thử Miễn Phí",
-    "themeColor": "#3b82f6"
+    "slug": "top-robot-hut-bui-thong-minh",
+    "title": "Đánh Giá Top Robot Hút Bụi Thông Minh Tốt Nhất 2026",
+    "headline": "Sạch Triệt Để - Rảnh Tay Tuyệt Đối Với Robot Hút Bụi Thế Hệ Mới",
+    "description": "Khám phá các dòng robot hút bụi lau nhà thông minh lực hút siêu mạnh, điều hướng AI tránh vật cản chính xác, giá tốt nhất hôm nay.",
+    "productImage": "https://images.unsplash.com/photo-1584824486509-112e4181ff6b?auto=format&fit=crop&w=800&q=80",
+    "price": "4.500.000đ",
+    "originalPrice": "6.900.000đ",
+    "discount": "Giảm 35%",
+    "couponCode": "ROBOT35OFF",
+    "features": [
+      "Lực hút cực mạnh lên đến 5000Pa",
+      "Tự động giặt giẻ và sấy khô bằng khí nóng",
+      "Điều hướng LDS laser kết hợp AI tránh vật cản thông minh",
+      "Bảo hành chính hãng 12 tháng, đổi trả trong 30 ngày"
+    ],
+    "affiliateUrl": "https://shopee.vn/link-tiep-thi-cua-ban",
+    "ctaText": "NHẬN ƯU ĐÃI & MUA NGAY",
+    "themeColor": "#2563eb"
   },
   {
-    "slug": "page-2",
-    "title": "Khóa Học Lập Trình Web Cấp Tốc",
-    "headline": "Trở Thành Fullstack Developer Trong 90 Ngày",
-    "description": "Lộ trình thực chiến từ cơ bản đến nâng cao, cam kết hỗ trợ việc làm ngay sau khóa học.",
-    "ctaText": "Đăng Ký Ngay",
-    "themeColor": "#10b981"
-  },
-  {
-    "slug": "page-3",
-    "title": "Sản Phẩm Chăm Sóc Sức Khỏe Tự Nhiên",
-    "headline": "Tăng Cường Sức Đề Kháng Với Thảo Dược Chiết Xuất",
-    "description": "100% nguyên liệu hữu cơ thiên nhiên, an toàn cho cả gia đình bạn.",
-    "ctaText": "Mua Ngay Giảm 30%",
-    "themeColor": "#f59e0b"
-  },
-  {
-    "slug": "page-4",
-    "title": "Phần Mềm Quản Lý Tài Chính Cá Nhân",
-    "headline": "Kiểm Soát Chi Tiêu & Đầu Tư Thông Minh",
-    "description": "Theo dõi dòng tiền, tự động phân tích biểu đồ thu nhập và lập kế hoạch tự do tài chính.",
-    "ctaText": "Khám Phá Tính Năng",
-    "themeColor": "#8b5cf6"
-  },
-  {
-    "slug": "page-5",
-    "title": "Dịch Vụ Thiết Kế Landing Page Tốc Độ Cao",
-    "headline": "Xây Dựng Trang Đích Đạt Tốc Độ 100/100 Google Speed",
-    "description": "Tích hợp CDN Cloudflare Edge, tải trang dưới 0.5 giây giúp tăng gấp đôi doanh số.",
-    "ctaText": "Nhận Báo Giá",
-    "themeColor": "#ec4899"
-  },
-  {
-    "slug": "page-6",
-    "title": "Tai Nghe Không Dây Noise Cancelling Pro",
-    "headline": "Trải Nghiệm Âm Thanh Đỉnh Cao & Chống Ồn Tuyệt Đối",
-    "description": "Thời lượng pin lên đến 40 giờ, công nghệ Bluetooth 5.4 kết nối mượt mà.",
-    "ctaText": "Đặt Hàng Trước",
-    "themeColor": "#06b6d4"
-  },
-  {
-    "slug": "page-7",
-    "title": "Giải Pháp Cloud Hosting Cho Startup",
-    "headline": "Hạ Tầng An Toàn, Băng Thông Không Giới Hạn",
-    "description": "Bảo vệ DDoS toàn diện, uptime 99.99%, hỗ trợ kỹ thuật 24/7.",
-    "ctaText": "Bắt Đầu Ngay",
-    "themeColor": "#6366f1"
-  },
-  {
-    "slug": "page-8",
-    "title": "Khóa Học Forex & Crypto Cho Người Mới",
-    "headline": "Nắm Bắt Xu Hướng Thị Trường & Quản Lý Rủi Ro",
-    "description": "Chia sẻ chiến lược giao dịch thực chiến từ các chuyên gia 10 năm kinh nghiệm.",
-    "ctaText": "Tham Gia Group VIP",
-    "themeColor": "#ef4444"
-  },
-  {
-    "slug": "page-9",
-    "title": "Ứng Dụng Tập Gym & Yoga Tại Nhà",
-    "headline": "Luyện Tập Mọi Lúc Mọi Nơi Với HLV AI",
-    "description": "Thực đơn dinh dưỡng cá nhân hóa kết hợp bài tập phù hợp với mọi thể trạng.",
-    "ctaText": "Tải App Miễn Phí",
-    "themeColor": "#14b8a6"
-  },
-  {
-    "slug": "page-10",
-    "title": "Nước Hoa Artisan Handmade Cao Cấp",
-    "headline": "Mùi Hương Độc Bản Thể Hiện Phong Cách Riêng",
-    "description": "Sự kết hợp tinh tế giữa các nốt hương gỗ và hoa tự nhiên nhập khẩu từ Pháp.",
-    "ctaText": "Trải Nghiệm Mẫu Thử",
-    "themeColor": "#d97706"
+    "slug": "top-robot-tong-hop",
+    "title": "Đánh Giá Top Robot Hút Bụi Thông Minh Tốt Nhất 2026",
+    "headline": "Rảnh Tay Tuyệt Đối Với Robot Hút Bụi - Thế Hệ Mới Sạch Triệt Để ",
+    "description": "Khám phá các dòng robot hút bụi lau nhà thông minh lực hút siêu mạnh, điều hướng AI tránh vật cản chính xác, giá tốt nhất hôm nay.",
+    "productImage": "https://images.unsplash.com/photo-1584824486509-112e4181ff6b?auto=format&fit=crop&w=800&q=80",
+    "price": "4.500.000đ",
+    "originalPrice": "6.900.000đ",
+    "discount": "Giảm 35%",
+    "couponCode": "ROBOT35OFF",
+    "features": [
+      "Lực hút cực mạnh lên đến 5000Pa",
+      "Tự động giặt giẻ và sấy khô bằng khí nóng",
+      "Điều hướng LDS laser kết hợp AI tránh vật cản thông minh",
+      "Bảo hành chính hãng 12 tháng, đổi trả trong 30 ngày"
+    ],
+    "affiliateUrl": "https://shopee.vn/link-tiep-thi-cua-ban",
+    "ctaText": "NHẬN ƯU ĐÃI & MUA NGAY",
+    "themeColor": "#2563eb"
   }
+  
 ]
